@@ -443,7 +443,7 @@ function App() {
               <input
                 type="text"
                 placeholder="Your email here"
-                className=" text-primary text-xs ml-3 "
+                className=" text-primary text-xs min-w-[100px] ml-3 "
               />
               <button className=" bg-[#69FAB4] text-primary text-xs py-[7px] px-[13px] mr-3 rounded-[5px] font-semibold">
                 Subscribe
