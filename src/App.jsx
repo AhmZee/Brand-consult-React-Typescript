@@ -453,7 +453,7 @@ function App() {
         </section>
         <section className=" p-5 text-primary ">
           <div className=" grid grid-cols-2 gap-y-5 gap-x-5 myLS:grid-cols-4 ">
-            <div className=" order-1">
+            <div className="">
               <div className=" max-w-[300px] mr-5 ">
                 <div className=" flex items-center gap-3 mb-3">
                   <img src={logo} alt="" className=" w-[45px] h-[45px] " />
@@ -471,7 +471,7 @@ function App() {
                 </h5>
               </div>
             </div>
-            <ul className=" text-xl order-2">
+            <ul className=" text-xl ">
               <li className=" text-xs font-semibold mb-3 whitespace-nowrap ">
                 Our Company
               </li>
@@ -481,7 +481,7 @@ function App() {
               <li className=" text-xs mb-3 ">Our services</li>
             </ul>
 
-            <ul className=" text-xl mr-5 order-4 myLS:order-3 ">
+            <ul className=" text-xl mr-5 ">
               <li className=" text-xs font-semibold mb-3 ">Services</li>
               <li className=" text-xs mb-3 ">Business Analysis</li>
               <li className=" text-xs mb-3 ">Strategy Planning</li>
@@ -490,7 +490,7 @@ function App() {
               <li className=" text-xs mb-3 ">Experienced Design</li>
               <li className=" text-xs mb-3 ">Audit & Evaluation</li>
             </ul>
-            <div className=" order-3 myLS:order-4 ">
+            <div className=" ">
               <h4 className=" text-xs font-semibold mb-3 ">
                 Subscribe to our newsletter
               </h4>
