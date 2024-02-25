@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import arrowRight from "./assets/icons/Vector (3).png";
 import lady1 from "./assets/images/Practice website 1.png";
@@ -22,14 +23,9 @@ import evaluationIcon from "./assets/icons/Frame 10.png";
 import cooperate1 from "./assets/images/Frame 47.png";
 import cooperate2 from "./assets/images/Frame 48.png";
 import cooperate3 from "./assets/images/Frame 49.png";
-import lady2 from "./assets/images/lady_on_suit_3-removebg-preview 1.png";
 import yellow from "./assets/images/Union.png";
 import stars from "./assets/images/Frame 63 (1).png";
 import logo from "./assets/icons/logo.png";
-import fbLogo from "./assets/icons/g10.png";
-import xLogo from "./assets/icons/Group.png";
-import linkinLogo from "./assets/icons/Path 2520.png";
-import instaLogo from "./assets/icons/Vector 0.png";
 
 function App() {
   const members = useMemo(
@@ -87,16 +83,20 @@ function App() {
 
     return () => clearInterval(intervalId);
   }, [selectMember, members]);
+
+  const selectedTracker = "bg-[#12182B] w-[10px] h-[10px] rounded-[50%]";
   return (
-    <div>
-      <Navbar />
-      <main className=" text-secondary font-Poppins ">
+    <div className=" h-[100vh]">
+      <div  className=" fixed w-[100%] z-40 ">
+        <Navbar />
+      </div>
+      <main id="home" className=" text-secondary font-Poppins pt-20 ">
         <section className=" p-5 grid-cols-2 align-top myLS:grid ">
           <div className="">
             <h1 className=" text-5xl text-center text-primary font-bold mb-5 myLS:mb-10 myLS:text-left myLS:leading-[70px] myLS:max-w-[320px] ">
               Utilize our solution to expand your business.
             </h1>
-            <p className=" text-justify text-sm  text-primary mb-5 myLS:mb-10 myLS:max-w-[500px]">
+            <p  className=" text-justify text-sm  text-primary mb-5 myLS:mb-10 myLS:max-w-[500px]">
               Make your business prosper with our great team of experts. We'll
               make your new business plan a success!
             </p>
@@ -105,8 +105,8 @@ function App() {
             </button>
           </div>
           <div className=" relative pt-20  pb-32 myLS:max-h-[600px] myLS:pt-0  ">
-            <img src={lady1} alt="" className="" />
-            <div className=" bg-primary w-[220px] px-5 py-3 rounded-[15px] absolute right-0 top-0  ">
+            <img src={lady1} alt="" className=" " />
+            <div className=" bg-primary w-[220px] px-5 py-3 rounded-[15px] absolute right-0 top-0 ">
               <h5 className=" text-[0.60rem] mb-1 ">Total bonus</h5>
               <h3 className=" font-semibold">+80.5%</h3>
               <img src={waveImage} alt="" />
@@ -115,7 +115,7 @@ function App() {
               <h4 className=" text-xs text-center mb-3">
                 Business Sales Tracker
               </h4>
-              <div className=" flex gap-2 justify-center  ">
+              <div className=" flex gap-2 justify-center ">
                 <div>
                   <ul className=" flex flex-col gap-[2px] ">
                     <li className=" text-[0.60rem] ">20k</li>
@@ -184,13 +184,13 @@ function App() {
               </div>
             </div>
             <div className=" overflow-x-auto flex flex-row pb-5 myLS:gap-5 lg:justify-center  ">
-              <img src={peopleMeeting1} alt="" className=" mr-4 w-[315px]" />
-              <img src={peopleMeeting2} alt="" className=" mr-4 w-[315px]" />
-              <img src={peopleMeeting3} alt="" className=" mr-4 w-[315px]" />
+              <img src={peopleMeeting1} alt="" className=" mr-4 w-[295px]" />
+              <img src={peopleMeeting2} alt="" className=" mr-4 w-[295px]" />
+              <img src={peopleMeeting3} alt="" className=" mr-4 w-[295px]" />
             </div>
           </div>
         </section>
-        <section className=" gap-5 flex-row justify-center items-center block myLS:flex mb-8 ">
+        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 ">
           <div className=" relative p-5 mt-10 max-w-[500px] ">
             <img src={peopleMeeting4} alt="" />
             <div className=" absolute top-[-20px] left-[10px] bg-primary w-[160px] h-[115px] rounded-[7px] myLS:left-[-20px] ">
@@ -263,7 +263,7 @@ function App() {
           </div>
         </section>
         <section className=" bg-[#0E121F] mb-10 w-[100%] ">
-          <div className=" px-5 py-10   ">
+          <div className=" px-5 py-12  ">
             <div className=" pb-3 ">
               <h1 className="text-3xl text-center mb-5">
                 What We Do To Serve Your Best
@@ -354,29 +354,33 @@ function App() {
           <h1 className=" text-4xl font-bold max-w-[560px] mb-5 leading-[50px] m-auto myLS:text-center ">
             Our mentors are experts in different fields
           </h1>
-          <div className=" overflow-x-auto flex flex-row myLS:gap-5 lg:justify-center pb-5 ">
-            <div className=" min-w-[310px] mr-5">
-              <img src={cooperate1} alt="" className=" mr-4 w-[310px]" />
-              <h3 className=" text-3xl text-center mt-6 font-semibold ">
-                Sahledin Adam
-              </h3>
-              <h4 className=" text-xs text-center mt-3 ">Head of power MTI</h4>
-            </div>
-            <div className=" min-w-[310px] mr-5 ">
-              <img src={cooperate2} alt="" className=" mr-4 w-[310px]" />
-              <h3 className=" text-3xl text-center mt-6 font-semibold ">
-                Jessica Angel
-              </h3>
-              <h4 className=" text-xs text-center mt-3 ">
-                Senior client partner
-              </h4>
-            </div>
-            <div className=" min-w-[310px] mr-5">
-              <img src={cooperate3} alt="" className=" mr-4 w-[310px]" />
-              <h3 className=" text-3xl text-center mt-6 font-semibold ">
-                Tommy Bells
-              </h3>
-              <h4 className=" text-xs text-center mt-3 ">Director ACT</h4>
+          <div>
+            <div className=" overflow-x-auto flex flex-row myLS:gap-4 lg:justify-center pb-5">
+              <div className=" min-w-[295px]  mr-5">
+                <img src={cooperate1} alt="" className=" mr-4 w-[295px]" />
+                <h3 className=" text-3xl text-center mt-6 font-semibold ">
+                  Sahledin Adam
+                </h3>
+                <h4 className=" text-xs text-center mt-3 ">
+                  Head of power MTI
+                </h4>
+              </div>
+              <div className=" min-w-[295px] mr-5 ">
+                <img src={cooperate2} alt="" className=" mr-4 w-[295px]" />
+                <h3 className=" text-3xl text-center mt-6 font-semibold ">
+                  Jessica Angel
+                </h3>
+                <h4 className=" text-xs text-center mt-3 ">
+                  Senior client partner
+                </h4>
+              </div>
+              <div className=" min-w-[295px] mr-5">
+                <img src={cooperate3} alt="" className=" mr-4 w-[295px]" />
+                <h3 className=" text-3xl text-center mt-6 font-semibold ">
+                  Tommy Bells
+                </h3>
+                <h4 className=" text-xs text-center mt-3 ">Director ACT</h4>
+              </div>
             </div>
           </div>
         </section>
@@ -410,8 +414,12 @@ function App() {
                 <h3 className=" mb-3 myLS:mb-5">{selectMember.information}</h3>
                 <div className="">
                   <img src={stars} alt="" className=" mb-3 myLS:mb-5" />
-                  <h3 className=" text-lg font-semibold myLS:mb-3 ">{selectMember.name}</h3>
-                  <h4 className=" text-sm mb-5 myLS:mb-10 ">{selectMember.position}</h4>
+                  <h3 className=" text-lg font-semibold myLS:mb-3 ">
+                    {selectMember.name}
+                  </h3>
+                  <h4 className=" text-sm mb-5 myLS:mb-10 ">
+                    {selectMember.position}
+                  </h4>
                   <ul className=" flex gap-3 justify-center myLS:justify-start ">
                     {members.map((member) => (
                       <li
@@ -419,7 +427,7 @@ function App() {
                         onClick={() => handleMemberClick(member)}
                         className={
                           selectMember.id === member.id
-                            ? "selected-tracker"
+                            ? selectedTracker
                             : " bg-[#D9D9D9] w-[10px] h-[10px]  rounded-[50%] "
                         }
                       ></li>
@@ -505,20 +513,13 @@ function App() {
             </div>
           </div>
         </section>
-        <footer className=" bg-primary ">
-          <div className=" px-5 py-3 justify-between items-center myLS:flex ">
-            <h3 className=" text-xs text-center mb-2 ">
-              All Copyrights are reserved by Usman Ahmed
-            </h3>
-            <div className=" flex justify-center gap-2 myLS:flex myLS:">
-              <img src={fbLogo} alt="" />
-              <img src={linkinLogo} alt="" />
-              <img src={xLogo} alt="" />
-              <img src={instaLogo} alt="" />
-            </div>
-          </div>
-        </footer>
+        <a href="#home">
+        <div className=" bg-primary w-[50px] h-[50px] rounded-[50%] flex justify-center items-center fixed bottom-[80px] right-[50px] border-[0.5px] border-secondary">
+          <img src={arrowRight} alt="" className=" rotate-[270deg] w-[25px] " />
+        </div>
+        </a>
       </main>
+      <Footer />
     </div>
   );
 }
