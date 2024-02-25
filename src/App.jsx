@@ -183,7 +183,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-x-auto flex flex-row myLS:gap-5 lg:justify-center  ">
+            <div className=" overflow-x-auto flex flex-row pb-5 myLS:gap-5 lg:justify-center  ">
               <img src={peopleMeeting1} alt="" className=" mr-4 w-[315px]" />
               <img src={peopleMeeting2} alt="" className=" mr-4 w-[315px]" />
               <img src={peopleMeeting3} alt="" className=" mr-4 w-[315px]" />
