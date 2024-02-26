@@ -51,7 +51,7 @@ function App() {
         position: "Director ACT",
         imageSrc: cooperate3,
         information:
-          "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.",
+          "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64.",
         name: "Tommy Bells",
       },
     ],
@@ -160,7 +160,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="  bg-primary ">
+        <section className="  bg-primary mt-10 ">
           <div className=" py-10 px-5 ">
             <div>
               <div>
@@ -190,7 +190,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 ">
+        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 mt-10 ">
           <div className=" relative p-5 mt-10 max-w-[500px] ">
             <img src={peopleMeeting4} alt="" />
             <div className=" absolute top-[-20px] left-[10px] bg-primary w-[160px] h-[115px] rounded-[7px] myLS:left-[-20px] ">
@@ -262,7 +262,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" bg-[#0E121F] mb-10 w-[100%] ">
+        <section className=" bg-[#0E121F] mb-10 w-[100%] mt-10 ">
           <div className=" px-5 py-12  ">
             <div className=" pb-3 ">
               <h1 className="text-3xl text-center mb-5">
@@ -384,8 +384,7 @@ function App() {
             </div>
           </div>
         </section>
-
-        <section className=" p-5 text-primary mt-10">
+        <section className=" p-5 text-primary ">
           <div className=" mb-5">
             <h1 className=" text-4xl font-bold text-center mb-5 leading-[50px] m-auto myLS:text-center ">
               What’s Our Client Saying?
