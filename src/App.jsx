@@ -177,9 +177,9 @@ function App() {
         </section>
         <section className="  bg-primary mt-16 ">
           <div className=" py-10 px-5 ">
-            <div>
+            <div className=" myLS:flex justify-between items-center">
               <div>
-                <h2 className=" text-2xl font-bold mb-2 myLS:text-left myLS:max-w-[320px] ">
+                <h2 className=" text-3xl font-bold mb-2 myLS:text-left myLS:max-w-[320px] ">
                   We Provide The Best
                 </h2>
                 <img
@@ -187,12 +187,12 @@ function App() {
                   alt=""
                   className=" bg-tertiary px-6 py-2 rounded-[25px] mb-2  "
                 />
-                <h2 className=" text-2xl text-cente font-bold mb-5 myLS:mb-10 myLS:text-left myLS:max-w-[320px] ">
+                <h2 className=" text-3xl text-cente font-bold mb-5 myLS:mb-10 myLS:text-left myLS:max-w-[320px] myLS:leading-[50px]">
                   Solution For Your Business Development
                 </h2>
               </div>
               <div>
-                <p className=" text-justify text-sm mb-5 myLS:mb-10 myLS:max-w-[320px] ">
+                <p className=" text-justify text-sm mb-5 myLS:mb-10 myLS:max-w-[450px] ">
                   Make your business prosper with our great team of experts.
                   We'll make your new business plan a success!
                 </p>
