@@ -87,16 +87,16 @@ function App() {
   const selectedTracker = "bg-[#12182B] w-[10px] h-[10px] rounded-[50%]";
   return (
     <div className=" h-[100vh]">
-      <div  className=" fixed w-[100%] z-40 ">
+      <div className=" fixed w-[100%] z-40 ">
         <Navbar />
       </div>
-      <main id="home" className=" text-secondary font-Poppins pt-36 ">
+      <main id="home" className=" text-secondary font-Poppins pt-32 ">
         <section className=" p-5 grid-cols-2 align-top myLS:grid ">
           <div className=" mb-10 ">
             <h1 className=" text-5xl text-center text-primary font-bold mb-5 myLS:mb-10 myLS:text-left myLS:leading-[70px] myLS:max-w-[320px] ">
               Utilize our solution to expand your business.
             </h1>
-            <p  className=" text-justify text-sm  text-primary mb-5 myLS:mb-10 myLS:max-w-[500px]">
+            <p className=" text-justify text-sm  text-primary mb-5 myLS:mb-10 myLS:max-w-[400px]">
               Make your business prosper with our great team of experts. We'll
               make your new business plan a success!
             </p>
@@ -104,14 +104,18 @@ function App() {
               Let’s Talk <img src={arrowRight} alt="" />
             </button>
           </div>
-          <div className=" relative pt-20  pb-32 myLS:max-h-[600px] myLS:pt-0  ">
-            <img src={lady1} alt="" className=" " />
-            <div className=" bg-primary w-[220px] px-5 py-3 rounded-[15px] absolute right-0 top-0 ">
+          <div className=" relative  pb-36 h-[570px] max-w-[550px] myLS:pt-0 myLS:h-[600px]  ">
+            <img
+              src={lady1}
+              alt=""
+              className=" mr-10 absolute  max-h-[600px] top-[50px] z-[1] myLS:top-0  "
+            />
+            <div className=" bg-primary w-[220px] px-5 py-3 rounded-[15px] absolute right-0 z-0  ">
               <h5 className=" text-[0.60rem] mb-1 ">Total bonus</h5>
               <h3 className=" font-semibold">+80.5%</h3>
               <img src={waveImage} alt="" />
             </div>
-            <div className=" bg-primary w-[200px] p-3 rounded-[15px] absolute top-[360px] ">
+            <div className=" bg-primary w-[200px] p-3 rounded-[15px] absolute top-[330px] myLS:top-[200px] left-0 z-[2]  ">
               <h4 className=" text-xs text-center mb-3">
                 Business Sales Tracker
               </h4>
@@ -148,7 +152,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className=" bg-primary w-[250px] px-5 py-3 rounded-[15px] absolute right-0 bottom-0">
+            <div className=" bg-primary w-[250px] px-5 py-3 rounded-[15px] absolute right-0 bottom-0 z-[3] myLS:right-[20px]">
               <h3 className=" mb-2">+80.5%</h3>
               <h5 className=" text-[0.60rem] ">Last 30 days business growth</h5>
               <div className=" w-[100%] h-[10px] bg-secondary rounded-[5px] my-1">
@@ -513,9 +517,13 @@ function App() {
           </div>
         </section>
         <a href="#home">
-        <div className=" bg-primary w-[50px] h-[50px] rounded-[50%] flex justify-center items-center fixed bottom-[80px] right-[50px] border-[0.5px] border-secondary">
-          <img src={arrowRight} alt="" className=" rotate-[270deg] w-[25px] " />
-        </div>
+          <div className=" bg-primary w-[50px] h-[50px] rounded-[50%] flex justify-center items-center fixed bottom-[80px] right-[50px] border-[0.5px] border-secondary z-[10]">
+            <img
+              src={arrowRight}
+              alt=""
+              className=" rotate-[270deg] w-[25px] "
+            />
+          </div>
         </a>
       </main>
       <Footer />
