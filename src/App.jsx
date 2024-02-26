@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 import arrowRight from "./assets/icons/Vector (3).png";
 import lady1 from "./assets/images/Practice website 1.png";
+import flower from "./assets/images/Group 2.png";
 import waveImage from "./assets/icons/Vector 3.png";
 import waveArrow from "./assets/icons/Vector.png";
 import peopleMeeting1 from "./assets/images/Frame 19.png";
@@ -90,7 +91,10 @@ function App() {
       <div className=" fixed w-[100%] z-40 ">
         <Navbar />
       </div>
-      <main id="home" className=" text-secondary font-Poppins pt-28 myLS:pt-32 ">
+      <main
+        id="home"
+        className=" text-secondary font-Poppins pt-28 myLS:pt-32 "
+      >
         <section className=" p-5 grid-cols-2 align-top myLS:grid ">
           <div className=" mb-10 ">
             <h1 className=" text-5xl text-center text-primary font-bold mb-5 myLS:mb-10 myLS:text-left myLS:leading-[70px] myLS:max-w-[320px] ">
@@ -104,18 +108,21 @@ function App() {
               Let’s Talk <img src={arrowRight} alt="" />
             </button>
           </div>
-          <div className=" relative  pb-36 h-[570px] max-w-[550px] myLS:pt-0 myLS:h-[600px]  ">
-            <img
-              src={lady1}
-              alt=""
-              className=" mr-10 absolute  max-h-[600px] top-[50px] z-[1] myLS:top-0  "
-            />
+          <div className=" relative  pb-36 h-[570px] max-w-[600px] myLS:pt-0 myLS:h-[600px]  ">
+            <div className=" mr-10 absolute  max-h-[600px] top-[50px] z-[1] myLS:top-0">
+              <img src={lady1} alt="" />
+              <img
+                src={flower}
+                alt=""
+                className=" absolute w-[100px] top-[100px] myLS:left-[-70px] myLS:w-[220px] "
+              />
+            </div>
             <div className=" bg-primary w-[220px] px-5 py-3 rounded-[15px] absolute right-0 z-0  ">
               <h5 className=" text-[0.60rem] mb-1 ">Total bonus</h5>
               <h3 className=" font-semibold">+80.5%</h3>
               <img src={waveImage} alt="" />
             </div>
-            <div className=" bg-primary w-[200px] p-3 rounded-[15px] absolute top-[330px] myLS:top-[200px] left-0 z-[2]  ">
+            <div className=" bg-primary w-[200px] p-3 rounded-[15px] absolute top-[330px] left-0 myLS:top-[225px] myLS:left-[-30px] z-[2]  ">
               <h4 className=" text-xs text-center mb-3">
                 Business Sales Tracker
               </h4>
@@ -194,10 +201,10 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 mt-16 ">
-          <div className=" relative p-5 mt-10 max-w-[500px] ">
-            <img src={peopleMeeting4} alt="" />
-            <div className=" absolute top-[-20px] left-[10px] bg-primary w-[160px] h-[115px] rounded-[7px] myLS:left-[-20px] ">
+        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 mt-16 p-5 ">
+          <div className=" relative  mt-10 max-w-[500px] ">
+            <img src={peopleMeeting4} alt="" className=" p-5 " />
+            <div className=" absolute top-[-20px] left-0 bg-primary w-[160px] h-[115px] rounded-[7px] ">
               <div className=" border-secondary border-b-[0.5px] border-opacity-[0.5] p-1 ">
                 <h4 className=" text-sm text-center font-light  ">
                   Export team
@@ -227,7 +234,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className=" absolute bottom-[-20px] right-[10px] text-primary text-center bg-secondary w-[110px] h-[125px] shadow-lg rounded-[12px] myLS:right-[-10px] ">
+            <div className=" absolute bottom-[-20px] right-0 text-primary text-center bg-secondary w-[110px] h-[125px] shadow-lg rounded-[12px] myLS:right-[-10px] ">
               <img
                 src={internetLogo}
                 alt=""
