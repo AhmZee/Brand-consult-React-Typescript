@@ -262,7 +262,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" bg-[#0E121F] mb-10 w-[100%] mt-10 ">
+        <section className=" bg-[#0E121F] mb-10 w-[100%] myLS:mt-20 ">
           <div className=" px-5 py-12  ">
             <div className=" pb-3 ">
               <h1 className="text-3xl text-center mb-5">
