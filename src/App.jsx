@@ -90,9 +90,9 @@ function App() {
       <div  className=" fixed w-[100%] z-40 ">
         <Navbar />
       </div>
-      <main id="home" className=" text-secondary font-Poppins pt-20 ">
+      <main id="home" className=" text-secondary font-Poppins pt-36 ">
         <section className=" p-5 grid-cols-2 align-top myLS:grid ">
-          <div className="">
+          <div className=" mb-10 ">
             <h1 className=" text-5xl text-center text-primary font-bold mb-5 myLS:mb-10 myLS:text-left myLS:leading-[70px] myLS:max-w-[320px] ">
               Utilize our solution to expand your business.
             </h1>
