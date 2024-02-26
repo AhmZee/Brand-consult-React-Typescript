@@ -108,9 +108,9 @@ function App() {
               Let’s Talk <img src={arrowRight} alt="" />
             </button>
           </div>
-          <div className=" relative  pb-36 h-[570px] max-w-[600px] myLS:pt-0 myLS:h-[600px]  ">
+          <div className=" relative  pb-36 h-[570px] max-w-[600px] myLS:pt-0 myLS:h-[550px]  ">
             <div className=" mr-10 absolute  max-h-[600px] top-[50px] z-[1] myLS:top-0">
-              <img src={lady1} alt="" />
+              <img src={lady1} alt="" className=" myLS:h-[530px] myLS:min-w-[450px] " />
               <img
                 src={flower}
                 alt=""
@@ -122,7 +122,7 @@ function App() {
               <h3 className=" font-semibold">+80.5%</h3>
               <img src={waveImage} alt="" />
             </div>
-            <div className=" bg-primary w-[200px] p-3 rounded-[15px] absolute top-[330px] left-0 myLS:top-[225px] myLS:left-[-30px] z-[2]  ">
+            <div className=" bg-primary w-[200px] p-3 rounded-[15px] absolute top-[330px] left-0 myLS:top-[190px] myLS:left-[-30px] z-[2]  ">
               <h4 className=" text-xs text-center mb-3">
                 Business Sales Tracker
               </h4>
