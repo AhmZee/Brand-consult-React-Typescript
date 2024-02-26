@@ -44,7 +44,7 @@ function App() {
         position: "Senior client partner",
         imageSrc: cooperate2,
         information:
-          "Jessica Angel is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+          "Jessica Angel is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space.",
         name: "Jessica Angel",
       },
       {
@@ -110,7 +110,11 @@ function App() {
           </div>
           <div className=" relative  pb-36 h-[570px] max-w-[600px] myLS:pt-0 myLS:h-[550px] ">
             <div className=" mr-10 absolute  max-h-[600px] top-[50px] z-[1] myLS:top-0">
-              <img src={lady1} alt="" className=" myLS:h-[530px] myLS:min-w-[450px] " />
+              <img
+                src={lady1}
+                alt=""
+                className=" myLS:h-[530px] myLS:min-w-[450px] "
+              />
               <img
                 src={flower}
                 alt=""
