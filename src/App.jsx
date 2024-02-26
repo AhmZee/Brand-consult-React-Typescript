@@ -160,7 +160,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="  bg-primary mt-10 ">
+        <section className="  bg-primary mt-16 ">
           <div className=" py-10 px-5 ">
             <div>
               <div>
@@ -190,7 +190,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 mt-10 ">
+        <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 mt-16 ">
           <div className=" relative p-5 mt-10 max-w-[500px] ">
             <img src={peopleMeeting4} alt="" />
             <div className=" absolute top-[-20px] left-[10px] bg-primary w-[160px] h-[115px] rounded-[7px] myLS:left-[-20px] ">
@@ -262,7 +262,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" bg-[#0E121F] mb-10 w-[100%] myLS:mt-20 ">
+        <section className=" bg-[#0E121F] mb-10 w-[100%] mt-16 myLS:mt-20 ">
           <div className=" px-5 py-12  ">
             <div className=" pb-3 ">
               <h1 className="text-3xl text-center mb-5">
@@ -350,7 +350,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" p-5  text-primary ">
+        <section className=" p-5  text-primary pt-10 ">
           <h1 className=" text-4xl font-bold max-w-[560px] mb-5 leading-[50px] m-auto myLS:text-center ">
             Our mentors are experts in different fields
           </h1>
@@ -384,8 +384,8 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" p-5 text-primary ">
-          <div className=" mb-5">
+        <section className=" p-5 text-primary mt-10 ">
+          <div>
             <h1 className=" text-4xl font-bold text-center mb-5 leading-[50px] m-auto myLS:text-center ">
               What’s Our Client Saying?
             </h1>
@@ -437,7 +437,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" p-5 mb-5 ">
+        <section className=" p-5 mb-5 mt-10 ">
           <div className="  bg-primary p-5 myLS:p-16 rounded-[15px] ">
             <h1 className=" text-3xl text-center font-semibold pt-10 pb-5 myLS:text-4xl myLS:p-16 ">
               Ready to change your business route
@@ -458,7 +458,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=" p-5 text-primary ">
+        <section className=" p-5 text-primary my-10 ">
           <div className=" grid grid-cols-2 gap-y-5 gap-x-5 myLS:grid-cols-4 ">
             <div className="">
               <div className=" max-w-[300px] mr-5 ">
