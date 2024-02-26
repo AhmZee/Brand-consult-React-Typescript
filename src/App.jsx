@@ -95,7 +95,7 @@ function App() {
         id="home"
         className=" text-secondary font-Poppins pt-28 myLS:pt-32 "
       >
-        <section className=" p-5 grid-cols-2 align-top myLS:grid ">
+        <section className=" p-5 grid-cols-2 align-top myLS:grid  ">
           <div className=" mb-10 ">
             <h1 className=" text-5xl text-center text-primary font-bold mb-5 myLS:mb-10 myLS:text-left myLS:leading-[70px] myLS:max-w-[320px] ">
               Utilize our solution to expand your business.
@@ -108,7 +108,7 @@ function App() {
               Let’s Talk <img src={arrowRight} alt="" />
             </button>
           </div>
-          <div className=" relative  pb-36 h-[570px] max-w-[600px] myLS:pt-0 myLS:h-[550px]  ">
+          <div className=" relative  pb-36 h-[570px] max-w-[600px] myLS:pt-0 myLS:h-[550px] ">
             <div className=" mr-10 absolute  max-h-[600px] top-[50px] z-[1] myLS:top-0">
               <img src={lady1} alt="" className=" myLS:h-[530px] myLS:min-w-[450px] " />
               <img
@@ -202,7 +202,7 @@ function App() {
           </div>
         </section>
         <section className=" gap-5 flex flex-col justify-center items-center myLS:flex myLS:flex-row mb-8 mt-16 p-5 ">
-          <div className=" relative  mt-10 max-w-[500px] ">
+          <div className=" relative  mt-5 max-w-[500px] ">
             <img src={peopleMeeting4} alt="" className=" p-5 " />
             <div className=" absolute top-[-20px] left-0 bg-primary w-[160px] h-[115px] rounded-[7px] ">
               <div className=" border-secondary border-b-[0.5px] border-opacity-[0.5] p-1 ">
